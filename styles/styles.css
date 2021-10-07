@@ -1,0 +1,59 @@
+header{
+    background-color: #200039;
+    height: 60px;
+    align-items: center;  
+}
+.socialLinksCont{
+    display: flex;
+    margin-right: 15px;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10px;
+    
+}
+.socialLinks{
+    opacity: 0.8;
+    padding:0px 30px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.socialLinks:hover{
+    transform: scale(1.1);
+}
+.socialIcon{
+    color: white;
+    font-size: 20px;
+}
+.socialNames{
+    color: white;
+    font-size: 12px;
+}
+.webTitle{
+    color: white;
+    font-size: 50px;
+    margin-left: 25px;
+    
+}
+.hiTextCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hiText{
+    font-size: 40px;
+    font-weight: bold;
+}
+.parentheses{
+    font-size: 40px;
+    margin-left: 12px;
+}
+.location{
+    display: flex;
+    padding-right: 10px;
+}
