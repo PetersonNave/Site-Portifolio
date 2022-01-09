@@ -7,60 +7,98 @@
     <title>Peterson Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <script defer src="/scripts/scripts.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/scripts.js"></script>
 </head>
 <body>
     <header>
         </div>
+        <h1 class="webTitle">Peterfólio</h1>
         <div class="socialLinksCont">
-            <div class="socialLinks" onclick="Teste()">
-                <i class="bi bi-instagram socialIcon"></i>
-                <p class="socialNames">Instagram</p>
-            </div>
-            <div class="socialLinks"> 
-                <i class="bi bi-github socialIcon"></i>
-                <p class="socialNames">GitHub</p>
-            </div>
+            
+                <a class="socialLinks" onclick="Teste()" href="https://www.instagram.com/peterson_meloo" target="_blank" style="text-decoration:none">  
+                     <i class="bi bi-instagram socialIcon"></i>                   
+                     <p class="socialNames">Instagram</p>
+                 </a>
+                  <a class="socialLinks" href="https://github.com/PetersonNave" target="_blank" style="text-decoration:none">  
+                    <i class="bi bi-github socialIcon"></i>
+                    <p class="socialNames">GitHub</p>
+                 </a>
             <div class="socialLinks">
                 <i class="bi bi-discord socialIcon"></i>
                 <p class="socialNames">Discord</p>
             </div>
         </div>    
-        <h1 class="webTitle">Lorem Ipsum</h1>
+       
     </header>
+    <div class="welcomeCont">
+        <h1 class="welcomeText" style="color: white;" >&lt/> OPA! BOAS-VINDAS AO MEU PORTIFOLIO &lt/></h1>
+    </div>
+   
     <div class="container">
         <div class="row">
-            <h1>&lt/> OPA! BOAS VINDAS AO MEU PORTIFOLIO &lt/></h1>
+           
         </div>
         <div class="row">
-            <div class="hiTextCont">
-                <p class="hiText">Olá! Me chamo Peterson</p>
-                <i class="parentheses">(entusiasta em programação)</i>
-            </div>
-        </div>
-        <div class="row">
-            <div class="row">
-                <div class="col-6">
-                    <div class="profession">
-                        <i class="bi bi-laptop"></i>
-                        <span>Web Developer</span>
+            <div class="col">
+                <div class="hiTextCont">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="hiText">Me chamo Peterson</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div>
+                                <i class="parentheses">(entusiasta em programação)</i>
+                            </div>
+                            
+                        </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="location">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        <p>Recife-PE</p>
-                    </div>
+                    
                     
                 </div>
             </div>
-
-
-
-
-
+           
         </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="AvatarDiv">
+                    <img src="src/profile.jpg" class="Avatar">
+                  </div>
+            </div>
+            <div class="col-sm-6">
+
+                
+                    <div class="row">
+                        <div>   
+
+
+                            
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="profession">
+                                <i class="bi bi-laptop attributesIcon"></i>
+                                <p class="infoText" >Web Developer</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="location">
+                                <i class="bi bi-geo-alt-fill attributesIcon"></i>
+                                <p class="infoText">Recife-PE</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+               <h1 id="askName" class="askName">Como você se chama?</h1>
+               <div class="forms" >
+                   <input id="name"  class="askNameInput" type="text" placeholder="Digite seu nome aqui :)">
+                   <button id="btn" onclick="changeName()" class="btnSubmit">Ok</button>
+               </div>
+                <h1 id="welcome_name_text" style="color: white;">Olá Peterson</h1>
+            </div>
+           
+        </div>
+       
+
        
 
         <!-- <h2>

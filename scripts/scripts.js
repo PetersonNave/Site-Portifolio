@@ -1,21 +1,12 @@
-
-
-function Teste2(){
-
-
+var btn = document.getElementById("btn")
+var name_ = document.getElementById("name")
+var welcome_name = document.getElementById("welcome_name_text")
+var askName = document.getElementById("askName")
+function changeName(){
+    askName.style.cssText = 'display: none;';
+    name_.style.cssText = 'display: none;';
+    btn.style.cssText = 'display: none;';
+     welcome_name.innerHTML = "Olá, "+ name_.value + "!"
+     welcome_name.style.cssText = 'display: block;';
+    
 }
-async function Teste()
-{
-    const api = async () => {
-        const response = await fetch('https://api.github.com/users/PetersonNave');
-        const data = await response.json();
-
-        return data.public_repos;
-    }
-
-    const api_data = await api();
-
-    console.log(api_data);
-
-}
- 

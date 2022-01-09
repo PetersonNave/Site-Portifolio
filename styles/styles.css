@@ -1,7 +1,15 @@
+@font-face {
+    font-family: AvantGarde-Book;
+    src: url(../font/ITCAvantGardeStd-DemiObl.otf);
+}
+
 header{
-    background-color: #200039;
+    background-color: #000000;
     height: 60px;
-    align-items: center;  
+    align-items: center; 
+    width: 100%; 
+    box-shadow: 0.0em 0.5em 0.5em black;
+   
 }
 .socialLinksCont{
     display: flex;
@@ -36,24 +44,175 @@ header{
 }
 .webTitle{
     color: white;
-    font-size: 50px;
+    font-size: 45px;
     margin-left: 25px;
-    
+    position: absolute;
+    margin-top: 7px;
 }
 .hiTextCont{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    margin-top: 20px;
 }
 .hiText{
-    font-size: 40px;
+    font-size: 4.0em;
     font-weight: bold;
+    font-family: AvantGarde-Book;
+    color: white;
+    margin-bottom: -10px;
+
+    -webkit-animation: fadeIn 2s ease-in-out;
+    -moz-animation: fadeIn 2s ease-in-out;
+    -o-animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
 }
 .parentheses{
-    font-size: 40px;
+    font-size: 4.0em;
     margin-left: 12px;
+    color: gray;
+    opacity: 0.9;
+    height: 100px;
+    flex: 1;
+    white-space: nowrap;
+
+    -webkit-animation: fadeIn 3s ease-in-out;
+    -moz-animation: fadeIn 3s ease-in-out;
+    -o-animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
 }
-.location{
+.location
+{
     display: flex;
+    align-items: center;
+    margin-top: 40px;
     
+}
+ .profession{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  
+}
+.container{
+    flex:1;
+    
+}
+body{
+    background-color: #200039;
+    font-size: 62.5%;
+    flex: 1;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+h1{
+    font-family: AvantGarde-Book;
+    letter-spacing: 7px;
+
+}
+.welcomeText{
+    font-size: 3.2em;
+    
+    margin-top: 50px;
+    text-shadow: 0.5em 0.2em 0.5em black;
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+.welcomeCont{
+    text-align: center;
+    
+}
+.attributesIcon{
+    color: white;
+    font-size: 55px;
+}
+body {
+    min-width: 550px;
+    max-width: 1920px;
+  }
+  .infoText{
+      font-size: 2.0rem;
+      color: #fff;
+      margin-left: 15px;
+      margin-top: 5px;
+      white-space: nowrap;
+
+  }
+  .Avatar{
+      width: 90%;
+      margin-top: 50px;
+      border: 1px solid #fff;
+      box-shadow: 0.5em 0.5em 0.5em black;
+      border-radius: 40px;
+      margin-bottom:30px;
+      max-width: 500px;
+
+
+      -webkit-animation: fadeIn 4s ease-in-out;
+    -moz-animation: fadeIn 4s ease-in-out;
+    -o-animation: fadeIn 4s ease-in-out;
+    animation: fadeIn 4s ease-in-out;
+  }
+  .AvatarDiv{
+    text-align: center;
+    
+  }
+
+
+
+  /* FADE IN */
+
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+.askName{
+    color: white;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.askNameInput{
+   width: 100%;
+   height: 50px;
+   margin-top: 25px;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 10px;
+    text-justify: center;
+    border: 1px solid black;
+}
+.forms{
+   
+    align-items: center;
+    display: inline-flex;
+    
+}
+.btnSubmit{
+    height: 50px;
+    margin-top: 25px;
+    width: 50px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#welcome_name_text{
+   display: none;
+   color: white;
 }
